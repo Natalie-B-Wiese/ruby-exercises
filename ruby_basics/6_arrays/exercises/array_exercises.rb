@@ -5,6 +5,7 @@ end
 
 def first_element(array)
   # return the first element of the array
+  return array.first
 end
 
 def third_element(array)
