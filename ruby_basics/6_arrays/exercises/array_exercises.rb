@@ -50,6 +50,7 @@ end
 
 def array_difference(original, comparison)
   # return an array of elements from the original array that are not in the comparison array
+  return original-comparison
 end
 
 def empty_array?(array)
