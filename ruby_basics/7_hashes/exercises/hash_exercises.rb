@@ -18,6 +18,7 @@ end
 
 def favorite_number(favorite_list)
   # use #fetch to return the value of the number key or 42 if the key is not found
+  return favorite_list.fetch(:number, 42)
 end
 
 def update_favorite_movie(favorite_list, movie)
