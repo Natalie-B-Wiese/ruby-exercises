@@ -49,4 +49,5 @@ end
 
 def merge_favorites(original_list, additional_list)
   # merge the two hashes: original_list and additional_list
+  original_list.merge(additional_list)
 end
