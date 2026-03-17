@@ -44,6 +44,7 @@ end
 
 def favorite_items(favorite_list)
   # return the values of favorite_list
+  return favorite_list.values
 end
 
 def merge_favorites(original_list, additional_list)
