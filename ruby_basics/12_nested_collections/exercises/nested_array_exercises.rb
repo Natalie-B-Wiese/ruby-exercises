@@ -35,6 +35,9 @@ def delete_seat_from_row(chart, row_index, seat_index)
   # the chart, then return the chart
 
   # Hint: explore the ruby docs to find a method for deleting from an array!
+  chart[row_index].delete_at(seat_index)
+
+  return chart
 end
 
 def delete_row_from_chart(chart, row_index)
