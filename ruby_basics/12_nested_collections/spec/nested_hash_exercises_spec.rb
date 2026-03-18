@@ -19,7 +19,7 @@ RSpec.describe 'Nested hash exercises' do
 
     context 'when the given language name is javascript' do
       # remove the 'x' from the line below to unskip the test
-      xit 'returns the information for javascript' do
+      it 'returns the information for javascript' do
         expected_output = { initial_release: 'December 4, 1995', is_beautiful?: false }
         expect(find_language_information(hash, :javascript)).to eq(expected_output)
       end
