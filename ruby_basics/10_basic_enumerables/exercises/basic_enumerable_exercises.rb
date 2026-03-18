@@ -14,6 +14,7 @@ end
 def find_absolute_values(numbers)
   # use #map to iterate through each item of the numbers (an array)
   # return an array of absolute values of each number
+  numbers.map{|number| number.abs}
 end
 
 def find_low_inventory(inventory_list)
