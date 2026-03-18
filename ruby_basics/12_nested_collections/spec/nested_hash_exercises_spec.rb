@@ -59,7 +59,7 @@ RSpec.describe 'Nested hash exercises' do
       }
     end
 
-    xit 'adds a hash about java with the included kv pairs' do
+    it 'adds a hash about java with the included kv pairs' do
       key_to_add = :java
       value_to_add = { is_beautiful?: false, initial_release: 'May 23, 1995' }
       expected_output = {
@@ -70,7 +70,7 @@ RSpec.describe 'Nested hash exercises' do
       expect(add_language(hash, key_to_add, value_to_add)).to eq(expected_output)
     end
 
-    xit 'adds a hash about python with the included kv pairs' do
+    it 'adds a hash about python with the included kv pairs' do
       key_to_add = :python
       value_to_add = { is_beautiful?: false, initial_release: 'Feb 20, 1991' }
       expected_output = {
