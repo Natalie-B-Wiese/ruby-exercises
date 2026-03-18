@@ -99,19 +99,19 @@ RSpec.describe 'Method Exercises' do
 
   describe 'twenty-first century predicate exercise' do
 
-    xit 'returns true when the year is between 2001 - 2100' do
+    it 'returns true when the year is between 2001 - 2100' do
       expect(twenty_first_century?(2024)).to be true
     end
 
-    xit 'returns true when the year is 2001' do
+    it 'returns true when the year is 2001' do
       expect(twenty_first_century?(2001)).to be true
     end
 
-    xit 'returns true when the year is 2100' do
+    it 'returns true when the year is 2100' do
       expect(twenty_first_century?(2100)).to be true
     end
 
-    xit 'returns false when the year is not between 2001 - 2100' do
+    it 'returns false when the year is not between 2001 - 2100' do
       expect(twenty_first_century?(1999)).to be false
     end
   end
