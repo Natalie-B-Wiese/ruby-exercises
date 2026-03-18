@@ -86,19 +86,19 @@ RSpec.describe 'Predicate Enumerable Exercises' do
 
   describe 'valid scores exercise' do
 
-    xit 'returns true when only one score is a 10' do
+    it 'returns true when only one score is a 10' do
       score_list = { easy_to_read: 10, uses_best_practices: 8, clever: 7 }
       perfect_score = 10
       expect(valid_scores?(score_list, perfect_score)).to be true
     end
 
-    xit 'returns false when more than one score is a 10' do
+    it 'returns false when more than one score is a 10' do
       score_list = { easy_to_read: 10, uses_best_practices: 10, clever: 9 }
       perfect_score = 10
       expect(valid_scores?(score_list, perfect_score)).to be false
     end
 
-    xit 'returns false when the list is empty' do
+    it 'returns false when the list is empty' do
       score_list = {}
       perfect_score = 10
       expect(valid_scores?(score_list, perfect_score)).to be false
