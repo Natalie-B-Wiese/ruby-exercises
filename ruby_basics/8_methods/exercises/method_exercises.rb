@@ -31,7 +31,9 @@ end
 # method name: #lucky_number
 # parameter: number (an integer) with default value of 7
 # return value: a string "Today's lucky number is <number>"
-
+def lucky_number(number=7)
+    return "Today's lucky number is #{number}"
+end
 
 # method name: #ascii_code
 # parameter: character (a string)
