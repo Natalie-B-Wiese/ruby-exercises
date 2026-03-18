@@ -68,17 +68,17 @@ RSpec.describe 'Predicate Enumerable Exercises' do
 
   describe 'correct format exercise' do
 
-    xit 'returns true when none of the words in the list are in upcase' do
+    it 'returns true when none of the words in the list are in upcase' do
       word_list = ["Pepsi", "Coke", "Dr. Pepper"]
       expect(correct_format?(word_list)).to be true
     end
 
-    xit 'returns false when at least one word in the list is in upcase' do
+    it 'returns false when at least one word in the list is in upcase' do
       word_list = ["PEPSI", "Coke", "Dr. Pepper"]
       expect(correct_format?(word_list)).to be false
     end
 
-    xit 'returns true when the list is empty' do
+    it 'returns true when the list is empty' do
       word_list = []
       expect(correct_format?(word_list)).to be true
     end

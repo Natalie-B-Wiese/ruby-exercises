@@ -15,6 +15,7 @@ end
 
 def correct_format?(word_list)
   # use #none? to return true when none of the words in the word_list (array) are in upcase
+  word_list.none?{|word| word==word.upcase}
 end
 
 def valid_scores?(score_list, perfect_score)
