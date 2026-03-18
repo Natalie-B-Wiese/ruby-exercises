@@ -115,14 +115,14 @@ RSpec.describe 'Nested hash exercises' do
       }
     end
 
-    xit 'removes the ruby hash' do
+    it 'removes the ruby hash' do
       expected_output = {
         javascript: { is_beautiful?: false, initial_release: 'December 4, 1995' }
       }
       expect(delete_language(hash, :ruby)).to eq(expected_output)
     end
 
-    xit 'removes the javascript hash' do
+    it 'removes the javascript hash' do
       expected_output = {
         ruby: { is_beautiful?: true, initial_release: 'December 25, 1996' }
       }
