@@ -7,7 +7,7 @@
 # return value: the number's ASCII character (https://www.ascii-code.com/)
 # hint: use Integer#chr
 def ascii_translator(number)
-    return number.chr
+    number.chr
 end
 
 
@@ -16,7 +16,7 @@ end
 # return value: an array containing items in both arrays
 # hint: use Array#intersection
 def common_sports(current_sports, favorite_sports)
-    return current_sports.intersection(favorite_sports)
+    current_sports.intersection(favorite_sports)
 end
 
 
@@ -25,14 +25,14 @@ end
 # return value: games, alphabetically sorted and duplicates removed
 # hint: chain Array#uniq and Array#sort together
 def alphabetical_list(games)
-    return games.uniq.sort
+    games.uniq.sort
 end
 
 # method name: #lucky_number
 # parameter: number (an integer) with default value of 7
 # return value: a string "Today's lucky number is <number>"
 def lucky_number(number=7)
-    return "Today's lucky number is #{number}"
+    "Today's lucky number is #{number}"
 end
 
 # method name: #ascii_code
@@ -44,7 +44,7 @@ def ascii_code(character)
     if (character.length!=1)
         return "Input Error"
     else
-        return character.ord
+        character.ord
     end
     
 end
@@ -74,5 +74,5 @@ end
 # return value: true if the year is between 2001 - 2100, otherwise return false
 # hint: use Comparable#between?
 def twenty_first_century?(year)
-    return year.between?(2001, 2100)
+    year.between?(2001, 2100)
 end
