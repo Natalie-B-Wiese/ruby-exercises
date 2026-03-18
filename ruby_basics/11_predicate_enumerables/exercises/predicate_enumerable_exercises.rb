@@ -10,6 +10,7 @@ end
 
 def twenty_first_century_years?(year_list)
   # use #all? to return true when all of the years in the year_list (array) are between 2001 and 2100
+  year_list.all?{|year|year.between?(2001, 2100)}
 end
 
 def correct_format?(word_list)
