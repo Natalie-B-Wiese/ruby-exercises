@@ -13,4 +13,30 @@ def permutations(array)
   #
   # NOTE: the tests do not check for ordering, so a return of `[[1, 2], [2, 1]]`
   # will be treated the same as `[[2, 1], [1, 2]]`
+  
+  if array.length==0
+    return [array]
+  elsif array.length==1 
+    return [array[0]]
+
+  elsif array.length==2
+    arr=[]
+    arr[0]=[array[0]]+[array[1]]
+    arr[1]=[array[1]] + [array[0]]
+    return arr
+  else
+    arr=[]
+
+    array.each_with_index do |static_element, element_index|
+      perm = permutations(array-[static_element])
+      perm.each do |dynamic_element|
+        full_perm=[static_element] + dynamic_element
+        arr.push(full_perm)
+      end
+    end
+
+    return arr
+
+  end
+
 end
